@@ -1,0 +1,546 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=15983');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+img {
+    pointer-events: none;
+  -webkit-touch-callout: none;
+}
+a {
+	text-decoration: none;
+	color: var(--red);
+}
+a:hover {
+	color: white;
+}
+:root {
+  --blue: #005cff;
+  --red: #ff0074;
+  --yellow: #ffd400; 
+  --black: #000;
+  --white: #fff;
+  --gray: #f6f6f6;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	font-size: 18px;
+	line-height: 1.6;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Helvetica Neue', sans-serif;
+	padding-bottom: 10px;
+    line-height: 1.3;
+}
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+
+.container {
+	overflow: hidden;
+	width: 1500px;
+	margin: auto;
+  	padding: 0px 20px;
+}
+.spacer { 
+	padding: 100px 0px;
+}
+
+
+/* ----------------------------------- */
+
+/* Header Start */
+
+header{
+    min-height: 20px;
+    z-index: 1;
+    width: 100%;
+    transition: 0.532s ease;
+    padding: 15px 0px;
+}
+
+header .menu-hide {
+   display: none;
+   float: right;
+   padding: 13px 10px;
+}
+header .menu-hide .menu {
+   font-size: 30px;
+   text-align: center;
+   color: white;
+   text-decoration: none;
+}
+header .logo_1 {
+   width: auto;
+   margin: 0px;
+   padding: 0px;
+}
+header nav ul {
+   float: right;
+}
+header nav li {
+   float: left;
+   display: inline;
+   padding: 0px 10px;
+}
+nav li a {
+   text-decoration: none;
+   color: var(--black);
+   padding: 10px 15px;
+}
+header .finalmenu ul {
+   display: none;
+   float: right;
+   padding-top: 10px;	
+}
+
+header .finalmenu li {
+   float: left;
+   display: inline;
+   padding: 0px 10px;
+}
+.finalmenu li a {
+   text-decoration: none;
+   color: var(--black);
+   padding: 50px 20px;
+}
+
+#head-nav li a {
+   font-size: 15px;
+   color: var(--black);
+   font-weight: 500;
+}
+#head-nav li a:hover {
+   color: var(--red);
+}
+
+.mainhead {
+   display: flex;
+   align-items: center;
+}
+
+.col-logo { width: 30%; }
+.col-nav { width: 50%; }
+.col-cta { 
+   display: flex; 
+   justify-content: space-between;
+   width: 20%;
+}
+
+.col-cta a {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 100px;
+    margin: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+.col-cta .cta1 {
+    background-color: var(--blue);
+    text-align: center;
+}
+.col-cta .cta2 {
+    background-color: var(--red);
+    text-align: center;
+}
+
+.col-cta .cta1:hover {
+    opacity: 0.7;
+    transition: 0.32s ease;
+}
+.col-cta .cta2:hover {
+    opacity: 0.7;
+    transition: 0.32s ease;
+}
+/* Header End */
+
+/* Hero Start */
+
+.herosection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.heroimg img {
+    width: 600px;
+    text-align: center;
+    margin-top: 50px;
+}
+.heroimg {
+    width: 45%;
+}
+.herotxt {
+    width: 55%;
+}
+
+
+.maincta { margin-top: 40px; }
+.maincta a {
+    font-size: 18px;
+    padding: 15px 25px;
+    width: 50%;
+    border-radius: 100px;
+    color: var(--white);
+    font-weight: bold;
+}
+.maincta .cta1 {
+    background-color: var(--blue);
+    text-align: center;
+}
+.maincta .cta2 {
+    background-color: var(--red);
+    text-align: center;
+}
+
+.maincta .cta1:hover {
+    opacity: 0.7;
+    transition: 0.32s ease;
+}
+.maincta .cta2:hover {
+    opacity: 0.7;
+    transition: 0.32s ease;
+}
+.herotxt p {
+    font-size: 20px;
+}
+h1.mainheadline span {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+h1.mainheadline {
+    font-size: 75px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.mainheadline span {
+    margin-right: 20px;
+}
+span.mainsubline {
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 2;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.mainheadline .one {
+    color: var(--blue);
+}
+.mainheadline .two {
+    color: var(--red);
+}
+.herotxt .line {
+    width: 10%;
+    height: 5;
+    margin-bottom: 10px;
+    background-color: var(--yellow);
+    border: none;
+}
+.mainsection {
+    background-color: var(--white);
+    background-image: url('/./assets/acton-crawford.webp');
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.9);
+}
+/* Hero End */
+
+/* Second Section */
+
+.customersection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+.cxtxt {
+    width: 40%;
+}
+.cximg {
+    width: 60%;
+}
+.cximg {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.line {
+    width: 15%;
+    height: 5;
+    margin-bottom: 20px;
+    background-color: var(--yellow);
+    border: none;
+}
+
+/* Second Section End */
+
+/* Sub Second Section */
+.services {
+    display: flex;
+    padding: 50px 0px 100px 0px;
+}
+.box1, .box2, .box3 {
+    padding: 50px;
+    color: var(--white);
+    border-radius: 5px;
+    text-align: center;
+}
+.services .box1 {
+    background-color: var(--blue);
+    margin: 30px 0px 30px 0px;
+}
+.services .box2 {
+    background-color: var(--red);
+}
+.services .box3 {
+    background-color: var(--blue);
+    margin: 30px 0px 30px 0px;
+}
+
+.services i {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+}
+.services a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+}
+.services a:hover {
+    color: var(--yellow);
+}
+
+/* Sub Second Section End */
+
+/* ---------------------- */
+/* Responsive */
+@media screen and (max-width: 1366px) { 
+    .mainsection {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1280px) { 
+    .mainsection {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	.mainhead { padding: 0px 20px; }
+	.col-logo { order:1; width: 30%; }
+	.col-nav { order:3; width: 10%; }
+	.col-cta { order:2; width: 60%; }
+	.col-cta a {
+		font-size: 16px;
+		color: white;
+		background-color: var(--red);
+		width: 50%;
+		text-align: center;
+		padding: 10px;
+		line-height: 1.2;
+	}
+	header .menu-hide .menu {
+		color: var(--red);
+	}
+	nav ul, nav ul:active ul {
+		display: none;
+		background-color: var(--red);
+		text-align: center;
+		padding: 0px;
+		position: absolute;
+		text-align: center;
+		height: 250px;
+	}
+	header .menu-hide {
+		display: block;
+	}
+	nav:hover ul {
+		display: block;
+        height: auto;
+	}
+	nav {
+		width: 15%;
+		float: right;
+		text-align: center;
+	}
+	nav li {
+		float: left;
+		text-align: center;
+		padding: 10px;
+	}
+	header nav li {
+		float: left;
+		display: inline;
+		padding: 16px 10px;
+	}
+	nav li a {
+		padding: 20px 8px;
+		color: white !important;
+	}
+	nav ul, nav ul:active ul {
+		display: none;
+		background-color: var(--red);
+		text-align: center;
+		padding: 0px;
+		position: absolute;
+		left: 80%;
+		top: 80px;
+		text-align: center;
+	}
+    .heroimg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .herotxt {
+        width: 100%;
+        padding: 50px 50px 100px 50px;
+
+        text-align: center;
+    }
+    h1.mainheadline {
+        font-size: 60px;
+    }
+    span.mainsubline {
+        font-size: 50px;
+    }
+    .customersection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 100px 50px 0px 50px;
+    }
+    .cxtxt {
+        width: 100%;
+        text-align: center;
+    }
+    .cximg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+    .cximg img {
+        width: 600px;
+    }
+    .line {
+        display: none;
+    }
+    .services {
+        display: flex;
+        padding: 50px 40px 100px 40px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width: 480px) { 
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+    .mainhead {
+        flex-wrap: wrap;
+    }
+	.col-logo { order:1; width: 80%; }
+	.col-nav { order:2; width: 20%; }
+	.col-cta { order:3; width: 100%; }
+	.col-cta a {
+		font-size: 16px;
+		color: white;
+		background-color: var(--red);
+		width: 50%;
+		text-align: center;
+		padding: 10px;
+		line-height: 1.2;
+	}
+	header .menu-hide .menu {
+		color: var(--red);
+	}
+	nav ul, nav ul:active ul {
+		display: none;
+		background-color: var(--red);
+		text-align: center;
+		padding: 0px;
+		position: absolute;
+		text-align: center;
+		height: 250px;
+	}
+	header .menu-hide {
+		display: block;
+	}
+	nav:hover ul {
+		display: block;
+        height: auto;
+	}
+	nav {
+		width: 15%;
+		float: right;
+		text-align: center;
+	}
+	nav li {
+		float: left;
+		text-align: center;
+		padding: 10px;
+	}
+	header nav li {
+		float: left;
+		display: inline;
+		padding: 16px 10px;
+	}
+	nav li a {
+		padding: 20px 8px;
+		color: white !important;
+	}
+    nav ul, nav ul:active ul {
+        display: none;
+        background-color: var(--red);
+        text-align: center;
+        padding: 0px;
+        position: absolute;
+        left: 60%;
+        top: 140px;
+        text-align: center;
+    }
+    .mainsection {
+        width: auto;
+    }
+    .heroimg img {
+        width: 400px;
+    }
+    h1.mainheadline {
+        font-size: 36px;
+    }
+    span.mainsubline {
+        font-size: 27px;
+    }
+    .maincta {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .maincta a {
+        width: auto;
+        margin-top: 10px;
+    }
+    .cximg img {
+        width: 400px;
+    }
+    .box1, .box2, .box3 {
+        padding: 30px;
+    }
+    .services {
+        padding: 20px 20px 50px 20px;
+    }
+}
